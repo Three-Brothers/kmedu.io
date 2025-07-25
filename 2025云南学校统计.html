@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云南省中专政策</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        span{
+            color: #f10215;
+         }
+         table{
+            text-align: center;
+         }
+         table td, table th {
+            margin: 4px;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;;
+         }
+         .switch{
+            display: none;
+         }
+         h3{
+            cursor: pointer;
+         }
+         div>ul{
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+            box-sizing: border-box;
+            margin: 10px;
+            float: left;
+         }
+         div>ul>li{
+            /* width: 80%; */
+            height: 30%;
+            /* background-color: #f0f0f0; */
+            font-size: 14px;
+         }
+         .clearfix {
+            clear: both;
+            display: block;
+         }
+         .li{
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 60px;
+         }
+    </style>
+    <script>
+        window.onload = function() {
+            // 获取所有h3元素
+            var h3Elements = document.querySelectorAll('h3');
+            // 为每个h3元素添加点击事件
+            h3Elements.forEach(function(h3) {
+                h3.addEventListener('click', function() {
+                    // 切换显示和隐藏
+                    var switchDiv = this.nextElementSibling;
+                    if (switchDiv.style.display === 'none' || switchDiv.style.display === '') {
+                        switchDiv.style.display = 'block';
+                    } else {
+                        switchDiv.style.display = 'none';
+                    }
+                });
+            });
+            //获取region元素
+            var regionElement = document.getElementById('region');
+            //添加点击事件，当被点击时弹出一个新的界面，并在页面中生成表格
+            regionElement.addEventListener('click', function() {
+                // 在这里弹出新的界面并生成表格
+                var newWindow = window.open('', '_blank');
+                newWindow.document.write('<html><head><title>云南省91个连片特困县(市)农村户口的学生</title></head><body>');
+                newWindow.document.write('<h1>云南省91个连片特困县(市)农村户口的学生</h1>');
+                newWindow.document.write('<table border="1" cellspacing="0" cellpadding="0" text-align="center">');
+                newWindow.document.write('<tr><th>序号</th><th>州(市)名称</th><th>贫困县数</th><th>贫困县名称</th></tr>');
+                newWindow.document.write('<tr><td>1</td><td>昆明市</td><td>2个</td><td>禄劝彝族苗族自治县、寻甸回族彝族自治县</td></tr>');
+                newWindow.document.write('<tr><td>2</td><td>曲靖市</td><td>4个</td><td>宜威市、会泽县、师宗县、罗平县</td></tr>');
+                newWindow.document.write('<tr><td>3</td><td>昭通市</td><td>10个</td><td>昭阳区、镇雄具、鲁甸县、巧家县、盐津县、大关县、永善县、绥江县、彝良县、威信县</td></tr>');
+                newWindow.document.write('<tr><td>4</td><td>楚雄彝族自治州</td><td>8个</td><td>楚雄市、武定县、南华县、姚安县、永仁县、大姚县、双柏县、牟定具</td></tr>');
+                newWindow.document.write('<tr><td>5</td><td>文山壮族苗族自治州</td><td>8个</td><td>文山市、现山县、西等县、麻栗坡县、马关县、丘北县、广南县、宁县</td></tr>');
+                newWindow.document.write('<tr><td>6</td><td>红河哈尼族彝族自治州</td><td>7个</td><td>屏边苗族自治县、泸西县、石屏县、元阳县、红河县、金平苗族瑶族傣族自治县、绿春县</td></tr>');
+                newWindow.document.write('<tr><td>7</td><td>保山市</td><td>5个</td><td>腾冲市、隆阳区、施甸县、龙陵县、昌宁县</td></tr>');
+                newWindow.document.write('<tr><td>8</td><td>普洱市</td><td>10个</td><td>思茅区、宁洱哈尼族葬族自治县、墨江哈尼族自治县、景东葬族自治县、景谷傣族彝族自治县、镇元葬族哈尼族拉枯族自治县、江城哈尼族彝族自治县、孟连傣族拉枯族佤族自治县、洲沧拉枯族自治县、西盟佤族自治县</td></tr>');
+                newWindow.document.write('<tr><td>9</td><td>西双版纳傣族自治州</td><td>2个</td><td>渤海县、勤腊县</td></tr>');
+                newWindow.document.write('<tr><td>10</td><td>临沧市</td><td>8个</td><td>临翔区、凤庆县、云县、永德县、镇康县、双江拉枯族佤族布朗族傣族自治县、耿马傣族佤族自治县、沧源佤族自治县</td></tr>');
+                newWindow.document.write('<tr><td>11</td><td>德宏傣族景颇族自治州</td><td>4个</td><td>潞西市、梁河县、盈江县、陇川县</td></tr>');
+                newWindow.document.write('<tr><td>12</td><td>大理白族自治州</td><td>12个</td><td>大理市、漾濞彝族自治县、祥云县、宾川县、弥渡县、南润彝族自治县、巍山彝族回族自治县、永平县、云龙县、洱源县、剑川县、鹤庆县</td></tr>');
+                newWindow.document.write('<tr><td>13</td><td>丽江市</td><td>4个</td><td>古城区、玉龙纳西族自治县、永胜县、宁蒗彝族自治县</td></tr>');
+                newWindow.document.write('<tr><td>14</td><td>迪庆藏族自治州</td><td>3个</td><td>香格里拉县、德钦县、维西傈傈族自治县</td></tr>');
+                newWindow.document.write('<tr><td>15</td><td>怒江傈傈族自治州</td><td>4个</td><td>泸水县、福贡县、贡山独龙怒族自治县、兰坪白族普米族自治县</td></tr>'); 
+                newWindow.document.write('</table></body></html>');
+                newWindow.document.close();
+            });
+            //通过rowspan参数找到对应的表
+
+        };
+        // 检测是否为手机浏览器
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+        // 如果是手机浏览器，设置页面尺寸
+        if (isMobile()) {
+            document.documentElement.style.width = '370px';
+            document.documentElement.style.height = '650px';
+            document.documentElement.style.margin = '0 auto';
+            // 设置viewport以适应手机屏幕
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=370, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+        } else {
+            // 如果不是手机浏览器，设置页面尺寸为默认值
+            document.documentElement.style.width = '1024px';
+            document.documentElement.style.height = '768px';
+            document.documentElement.style.margin = '0 auto';
+            // 设置viewport以适应桌面屏幕
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+        }
+    </script>
+</head>
+<body>
+    <h1>云南省中专政策</h1>
+    <ul>
+        <li>
+            <h3>昆明通航技工学校</h3>
+            <div class="switch">
+                <h4>学费:</h4>
+                <p><span>农村户籍:</span> 4960元/年/生· 补贴后的学费</p>
+                <p><span>城镇户籍:</span> 7960元/年/生· 补贴后的学费</p>
+                <h4>学校地址</h4>
+                <span>云南省昆明市五华区普吉街道同心路54号（昆明通航技工学校-普吉校区）</span>
+                <p>公交路线:</p>
+                <p>从各车站乘车到8路公交，乘车至起始站（轻机厂站）下车，即到达学校门口。</p>
+                <p>地铁路线:</p>
+                <p>从各车站乘车至地铁4号线，乘坐地铁至起始站（金川路站）下车，步行500米左右即能达到学校。</p>
+                <span>衡水系职教高考升学基地</span>
+                <h4>学校概况</h4>
+                <p>昆明通航技工学校，坐落于风景如画的云南省昆明市五华区普吉路，这里集山水江湖、林海草原、古寺古庙、革命纪念地于一体，每一寸土地都充满了浓郁的民族风情，现已成为培养杰出人才的摇篮。学校是经云南省人力资源和社会保
+                障厅批准成立的一所培养高技能人才的全日制技工学校。学校师资丰富，实训设备配备完善，满足各专业实训求。以工匠精神为引领，致力于培养具有社会责任感和创造性思维能力的能工巧匠型
+                技术人才。与省内外40余家企业建立了长期合作关系，全面推行工学一体化教学，深化产教融合、校企合作，确保学科与产业紧密相连，专业与市场需求无缝对接。
+                昆明通航技工学校始终坚持“以人为本、德育为核心、创新发展”的办学理念，弘扬学校精神，培养有社会责任感的人才。谨记“一技在手、一生无忧”的校训和“厚德、强技、笃学、铭志”的校风，致力于培养一批批爱国、勤勉、敬业的高技能人才，为国家的发展贡献力量。</p>
+                <h4>办学特色</h4>
+                <span>产教融合、校企合作、工学结合，“订单式”培养高技能人才</span>
+                <p>学校高度重视产教融合、校企合作，始终不断探索创新校企合作办学模式和运作机制，主动对接产业、亲近行业、携手企业，深入推进产学合作、校企协同育人。目前，学院已与省内外80
+                余家企业建立校企合作关系，与特斯拉、丰田、现代、通用、戴姆勒、比亚迪、中国电信、京东集团等10多家国际知名企业建立校企合作关系，全省领军企业、规模以上企业合作数量超10家以
+                上。学校积极拓展形式多样的校企合作方式，合理布局校外生产实训基地，目前已开设“特斯拉订单班”“京东订单班”“电信订单班”“宁波轨道订单班”“丰田班”“现代班”“通用班”
+                “比亚迪班”等多个订单班，校外实习实训基地达到100余个，教师企业实践基地达到20个，校企共同办专业，共同制订人才培养标准，共同招工、招生，共同建设师资队伍，共建生产性的实训基地，
+                共定课程，共同建设校园文化，共同促讲学生稳定就业。</p>
+                <h4>实行军事化规范管理</h4>
+                <p>学校国防教育是全民国防教育的重要基础，是增强民族凝聚力、提高全民国防素养的重要途径。教育系统必须切实提高政治站位，深入学习贯彻新修订的国防教育法，切实增强抓好学校国防教育的政治意识、责任意识和法治意识，深刻把握学校国防教育面临新形势新任务新要求，健全完善学校国防教育体系，全面推动新时代学校国防教育迈上新台阶，开启新篇章。</p>
+                <h4>衡水系职教高考教育模式</h4>
+                <span>弱进特出</span>
+                <span>低进高出</span><br />
+                <span>高进优出</span>
+                <span>优进尖出</span><br />
+                <h4>招生目录</h4>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>专业名称</th>
+                            <th>代码</th>
+                            <th>学制</th>
+                            <th>招生人数</th>
+                            <th>职教高考部分升学院校</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>计算机应用技术</p>
+                                <p>(消防工程技术方向)</p>
+                            </td>
+                            <td>0301-4</td>
+                            <td>3 & 5</td>
+                            <td>100</td>
+                            <td>
+                                <p>云南交通职业技术学院</p>
+                                <p>昆明工业职业技术学院</p>
+                                <p>云南交通职业运输学院</p>
+                                <p>云南机电职业技术学院</p>
+                                <p>曲靖师范学院</p>
+                                <p>昆明冶金高等专业学校</p>
+                                <p>云南国土资源职业学院</p>
+                                <p>云南国防工业职业技术学院</p>
+                                <p>滇西科技师范学院</p>
+                                <p>云南师范大学</p>
+                                <p>云南艺术学院</p>
+                                <p>昆明理工大学</p>
+                                <p>昆明幼儿师范高等专科学校</p>
+                                <p>曲靖医学高等专科学校</p>
+                                <p>楚雄师范学院</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>铁路客运服务</td>
+                            <td>0430-4</td>
+                            <td>3 & 5</td>
+                            <td>100</td>
+                            <td>
+                                <p>云南师范大学</p>
+                                <p>云南艺术学院</p>
+                                <p>昆明理工大学</p>
+                                <p>昆明幼儿师范高等专科学校</p>
+                                <p>曲靖医学高等专科学校</p>
+                                <p>楚雄师范学院</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>旅游服务与管理</p>
+                                <p>(中、西餐烹饪、酒店管理方向)</p>
+                            </td>
+                            <td>0520-4</td>
+                            <td>3 & 5</td>
+                            <td>100</td>
+                            <td>
+                                <p>云南民族大学</p>
+                                <p>云南文化艺术职业学院</p>
+                                <p>丽江文化旅游学院</p>
+                                <p>昆明冶金高等专科学校</p>
+                                <p>云南国土资源职业学院</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>护理</p>
+                                <p>(养老护理)</p>
+                            </td>
+                            <td>0515-4</td>
+                            <td>3 & 5</td>
+                            <td>100</td>
+                            <td>
+                                <p>昆明医科大学</p>
+                                <p>昆明医科大学海源学院</p>
+                                <p>云南工商学院</p>
+                                <p>云南经济管理学院</p>
+                                <p>丽江文化旅游学院</p>
+                                <p>云南国土资源职业学院</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>特色专业班级</h4>
+                <ol>
+                    <li>计算机网络应用（国企定向班）</li>
+                    <li>消防工程技术方向</li>
+                    <li>铁路客运服务（国企定向班）</li>
+                    <li>旅游服务与管理（中、西餐烹饪、酒店管理方向）</li>
+                    <li>护理（养老护理）</li>
+                </ol>
+                
+
+                
+            </div>
+        </li>
+        <li>
+            <h3>昆明技师学院</h3>
+            <div class="switch">
+                <h4>学费:</h4>
+                <p>3120元/生/年</p>
+                <h4>学校地址:</h4>
+                <span>云南省昆明市五华区学府路羊仙坡24号</span>
+                <h4>学校简介</h4>
+                <p>一、昆明技师学院是昆明市人民政府主办的公办职业院校（学院代码530T16），学院是全国职业教
+                育先进单位、国家技能人才培育突出贡献单位、国家级高技能人才培训基地、中国国家烹饪青年集训队实训基地，开设机械
+                、电工电子、汽车、烹饪、幼儿教育、信息技术、美容美发、化工、消防、园林等30余个专业，现有教职工 290人，在籍学
+                生近8000人，毕业生就业稳定率多年保持在95%以上。
+                二、招收年满15～22周岁的应、往届初高中和职高、中专、技校毕业生。
+                三、初中毕业生读4年制高级工，与专科同等层次；初中毕业生读5年制预备技师，高中毕业生读4年制预备技师，与本科同
+                等层次。毕业后取得省人力资源和社会保障厅授验的技工院校毕业证和职业技能等级证书。学院毕业证书在中华人民共和国人力
+                资源和社会保障部技工院校毕业证书查询网址中可以查询，查询网址为:<a href="http://www.mohrss.gov.cn" target="_blank">http://www.mohrss.gov.cn</a>；职业技能等级证书可在
+                技能人才评价证书全国联网查询，网址：<a href="http://jndj.osta.org.cn" target="_blank">http://jndj.osta.org.cn</a>。</p>
+                <h4>专业设置</h4>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>系部</th>
+                            <th>专业</th>
+                            <th>编码</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td rowspan="7">机电一体化技术与控制工程技术系</td>
+                            <td>电气自动化设备安装于维修</td>
+                            <td>0203-2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>数控加工(数控铣工)</td>
+                            <td>0107-2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>电气自动化设备安装与维修</td>
+                            <td>0203-2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>数控加工(数控车工)</td>
+                            <td>0106-2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>机电一体化技术</td>
+                            <td>0127-3</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>电气自动化设备安装与维修</td>
+                            <td>0203-3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>建筑工程管理</td>
+                            <td>1107-3</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td rowspan="9">交通与车辆工程技术系</td>
+                            <td>汽车维修</td>
+                            <td>0403-2</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>汽车维修</td>
+                            <td>0403-2</td>
+                        </tr>
+                         <tr>
+                            <td>10</td>
+                            <td>汽车制造与装配</td>
+                            <td>0126-2</td>
+                        </tr>
+                         <tr>
+                            <td>11</td>
+                            <td>汽车电器维修</td>
+                            <td>0404-2</td>
+                        </tr>
+                         <tr>
+                            <td>12</td>
+                            <td>汽车维修</td>
+                            <td>0403-3</td>
+                        </tr>
+                         <tr>
+                            <td>13</td>
+                            <td>新能源汽车检测与维修</td>
+                            <td>0435-3</td>
+                        </tr>
+                         <tr>
+                            <td>14</td>
+                            <td>汽车装饰与美容</td>
+                            <td>0406-3</td>
+                        </tr>
+                         <tr>
+                            <td>15</td>
+                            <td>汽车营销</td>
+                            <td>0408-3</td>
+                        </tr>
+                         <tr>
+                            <td>16</td>
+                            <td>工程机械运用与维修（挖机、装载机、叉车方向）</td>
+                            <td>0409-3</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td rowspan="7">食 品 工 程 与 现 代 服 务 技 术 系</td>
+                            <td>烹饪（中式烹调）</td>
+                            <td>0501-2</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>烹饪（中式烹调）</td>
+                            <td>0501-2</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>中西式面点（烘焙）</td>
+                            <td>0503-3</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>烹饪（西式烹调）</td>
+                            <td>0502-3</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>烹饪（中式烹调）</td>
+                            <td>0501-3</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>美容美发与造型</td>
+                            <td>0507-3</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>健康服务与管理</td>
+                            <td>0522-3</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td rowspan="7">教育与信息技术系</td>
+                            <td>计算机广告制作</td>
+                            <td>0307-2</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>计算机信息管理</td>
+                            <td>0304-2</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>计算机网络应用</td>
+                            <td>0301-2</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>计算机信息管理</td>
+                            <td>0304-2</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>计算机广告制作</td>
+                            <td>0307-3</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>电子商务</td>
+                            <td>0603-3</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>幼儿教育</td>
+                            <td>1501-3</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td rowspan="7">化工与林业技术系</td>
+                            <td>化工工艺</td>
+                            <td>0902-3</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>化工分析与检验</td>
+                            <td>0903-3</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>生物化工（制药方向）</td>
+                            <td>0905-3</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>药品营销</td>
+                            <td>1306-3</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>园林技术</td>
+                            <td>0711-3</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>消防工程技术</td>
+                            <td>1111-3</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>护理（养老护理方向）</td>
+                            <td>0515-4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+        <li>
+            <h3>昆明滇越技工学校</h3>
+            <div class="switch">
+                <h4>学费:</h4>
+                <span>4960元/生/年</span>
+                <h4>学校地址:</h4>
+                <span>云南省昆明市五华区昭宗路87号(云南经贸管理学校校址)</span>
+                <h4>学校简介</h4>
+                <p>昆明滇越技工学校是由云南省人力资源和社会保障厅批准成立的一所全日制技工学校。学校位于昆明市五华区黑林铺街道昭宗路87号原云南经贸管理学校（公办）原址，占地64.8亩，建筑面积40000多平方米。
+                校园紧靠眠山森林公园，绿树成荫，环境幽雅，交通便捷，教学设施设备齐全，师资力量雄厚，机构健全，制度完善，管理有方，教学有序，教师善教，学生乐学，是萃萃学子求学的理想之地。</p>
+                <p>学校现有烹饪、消防工程技术、新能源汽车检测与维修、形象设计、航空服务、高速铁路客运服务、电子商务、幼儿教育、护理、职教高考班等特色专业。在校学生 1800余人，教职员工 126 人。学校始终坚持以立德树
+                人为根本;坚持为党育人、为国育才办学宗旨:坚持以学生为中心，长善救失、赋能成长,因材施教的教育理念;倡导教师有品位、学生有品质、学校有品格的价值观；推行产教融合、校企合作、“订单式”培养办学模式；</p>
+                <p>坚持“技能+证书+学历提升”教学模式；重点培养学生的综合素质、实操动手和学习能力，为广大企业培养高素质复合型技能人才，为全国高职院校夯实大学生选拔基地，为办好人民满意的职业教育尽职尽责，
+                守正创新，踔厉奋发。我校始终想家长所想，急家长所急，一切服务于学生的成人、成长和成才。</p>
+                <h4>招生专业</h4>
+                <table border="1" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>专业代码</th>
+                            <th>专业名称</th>
+                            <th>学制</th>
+                            <th>招生人数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>0501-4</td>
+                            <td>烹饪</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0415-4</td>
+                            <td>新能源汽车检测与维修</td>
+                            <td>三年</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1111-4</td>
+                            <td>消防工程技术</td>
+                            <td>三年</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>0526-4</td>
+                            <td>形象设计</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>0433-4</td>
+                            <td>航空服务</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>0430-4</td>
+                            <td>铁路客运服务</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>0603-4</td>
+                            <td>电子商务</td>
+                            <td>三年</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>0515-4</td>
+                            <td>护理</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1501-4</td>
+                            <td>幼儿教育</td>
+                            <td>三年</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>专业介绍</h4>
+                <ul>
+                    <li class="li">烹饪专业</li>
+                    <li>主要课程:主要课程：烹饪概论、食品营养卫生、烹饪技术、刀工技术、厨房管理知识、面点制作、调酒、西餐基础等。</li>
+                    <li>岗位方向:中西式厨师、厨师长、营养配餐师、食品质量监督等。</li>
+                </ul>
+                <ul>
+                    <li class="li">消防工程技术</li>
+                    <li>主要课程：消防法规与监督管理、消防燃烧学、防火防爆技术、灭火与抢险救援技术、消防工程施工与调试等。</li>
+                    <li>岗位方向：消防施工员、消防工程师、项目经理、消防设施检测与维护、消防工程预算员等。</li>
+                </ul>
+                <ul>
+                    <li class="li">形象设计</li>
+                    <li>主要课程：职业形象塑造、人物整体造型设计、发型技术、美容技术、化妆技术、中医美容、头部护理等。</li>
+                    <li>岗位方向：人物形象设计师、化妆造型师、美容师、发型师、美甲师。</li>
+                </ul>
+                <ul>
+                    <li class="li">新能源汽车检测与维修</li>
+                    <li>主要课程：电控技术、电池技术、电机技术、汽车新能源与节能技术、汽车底盘构造与检修、汽车电气设备构造与维修等。</li>
+                    <li>岗位方向：新能源机修师、机械工程师、汽车工程师、销售服务等。</li>
+                </ul>
+                <ul>
+                    <li class="li">航空高铁专业</li>
+                    <li>主要课程：民航乘务技能与管理/高速铁路客运服务管理、客舱安全与应急处置/高铁安全管理与应急处置、礼仪等。</li>
+                    <li>岗位方向：乘务、乘服、票务、安检等。</li>
+                </ul>
+                <ul>
+                    <li class="li">护理专业（养老/职教高考方向）</li>
+                    <li>主要课程：人体解剖学、生理学、病理学、药理学、医学心理学、急救护理学、预防医学、护理管理学等。</li>
+                    <li>岗位方向：医院护士、养老护理、家庭护理人员、社区护理人员等。</li>
+                </ul>
+                <ul>
+                    <li class="li">电子商务</li>
+                    <li>主要课程：电子商务基础、网络营销、电子商务法律法规、电子商务网站设计、电子商务物流与配送等。</li>
+                    <li>岗位方向：网站策划、网站设计、电商客服、电子商务经理等。</li>
+                </ul>
+                <ul>
+                    <li class="li">幼儿教育</li>
+                    <li>主要课程：幼儿教育概论、幼儿心理学、幼儿教育法规与政策、幼儿保健学、幼儿安全教育等。</li>
+                    <li>岗位方向：从事幼儿教师岗位等。</li>
+                </ul>
+            <div class="clearfix"></div>
+            </div>
+        </li>
+    </ul><br />
+
+
+    <h4>2025年中等职业学校录取安排</h4>
+    <span>8月10-23日</span>
+    <p>三年制中职批(中专、职高、技工学校)</p>
+    <h4>助学政策</h4>
+    <p>1、学费减免包括所有农村(含县镇)学生、15%城市家庭经济困难学生,2000元/年/生，三年共:6000元;</p>
+    <p>2、云南省<a href="javascript:void(0)" id="region">91个连片特困县(市)农村户口</a>的学生,其它县(市)20%的学生,可享受国家助学金:2300元/年/生（<span>滇越技工2000一年</span>）,三年共6900元;</p>
+    <p>3、就读我校的迪庆州、怒江州农村户籍学生(初中起点第一、二学年,高中起点第一学年),给予生活补助:2500元/年/生；</p>
+    <p>4、<span>建档立卡户享受“雨露计划”</span>补助:3000元/年/生。</p>
+    <p>备注:<span>2、3、4三条三选一,仅只能选择一项享受。</span></p>
+    <p>5、品学兼优的学生,可获得国家奖学金:6000元/生;云南省政府励志奖学金:4000元/生；学校优秀学生奖学金；有机会参加国际交流；</p>
+</body>
+</html>
