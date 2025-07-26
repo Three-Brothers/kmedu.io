@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云南省中专政策</title>
     <style>
-        /* *{
-            margin: 0;
-            padding: 0;
-        } */
+       
         span{
             color: #f10215;
          }
          table{
             text-align: center;
+         }
+         #td tr:hover{
+            cursor: pointer;
+            background-color: pink;
          }
          table td, table th {
             margin: 4px;
@@ -30,15 +31,14 @@
          div>ul{
             width: 400px;
             height: 200px;
-            background-color: pink;
+            padding: 14px 16px;
+            border: 1px solid #ccc;
             box-sizing: border-box;
             margin: 10px;
             float: left;
          }
          div>ul>li{
-            /* width: 80%; */
-            height: 30%;
-            /* background-color: #f0f0f0; */
+            height: 36%;
             font-size: 14px;
          }
          .clearfix {
@@ -50,6 +50,18 @@
             font-weight: 700;
             text-align: center;
             line-height: 60px;
+         }
+         .botton{
+            height:10px;
+         }
+         .switch li{
+            list-style: none;
+         }
+         em{
+            color: #000;
+            font-weight: 700;
+            font-style: none;
+            margin-right: 1em;
          }
     </style>
     <script>
@@ -76,7 +88,7 @@
                 var newWindow = window.open('', '_blank');
                 newWindow.document.write('<html><head><title>云南省91个连片特困县(市)农村户口的学生</title></head><body>');
                 newWindow.document.write('<h1>云南省91个连片特困县(市)农村户口的学生</h1>');
-                newWindow.document.write('<table border="1" cellspacing="0" cellpadding="0" text-align="center">');
+                newWindow.document.write('<table border="1" style="width: 100%; border-collapse: collapse; text-align: center;" id="td">');
                 newWindow.document.write('<tr><th>序号</th><th>州(市)名称</th><th>贫困县数</th><th>贫困县名称</th></tr>');
                 newWindow.document.write('<tr><td>1</td><td>昆明市</td><td>2个</td><td>禄劝彝族苗族自治县、寻甸回族彝族自治县</td></tr>');
                 newWindow.document.write('<tr><td>2</td><td>曲靖市</td><td>4个</td><td>宜威市、会泽县、师宗县、罗平县</td></tr>');
@@ -95,8 +107,17 @@
                 newWindow.document.write('<tr><td>15</td><td>怒江傈傈族自治州</td><td>4个</td><td>泸水县、福贡县、贡山独龙怒族自治县、兰坪白族普米族自治县</td></tr>'); 
                 newWindow.document.write('</table></body></html>');
                 newWindow.document.close();
+                //创建完成之后给新窗口的表格添加样式
+                var style = newWindow.document.createElement('style');
+                style.innerHTML = `
+                    
+                    tr:hover {
+                        cursor: pointer;
+                        background-color: pink;
+                    }
+                `;
+                newWindow.document.head.appendChild(style);
             });
-            //通过rowspan参数找到对应的表
 
         };
         // 检测是否为手机浏览器
@@ -571,50 +592,140 @@
                 <h4>专业介绍</h4>
                 <ul>
                     <li class="li">烹饪专业</li>
-                    <li>主要课程:主要课程：烹饪概论、食品营养卫生、烹饪技术、刀工技术、厨房管理知识、面点制作、调酒、西餐基础等。</li>
-                    <li>岗位方向:中西式厨师、厨师长、营养配餐师、食品质量监督等。</li>
+                    <li><em>主要课程:</em> 烹饪概论、食品营养卫生、烹饪技术、刀工技术、厨房管理知识、面点制作、调酒、西餐基础等。</li>
+                    <li><em>岗位方向:</em> 中西式厨师、厨师长、营养配餐师、食品质量监督等。</li>
                 </ul>
                 <ul>
                     <li class="li">消防工程技术</li>
-                    <li>主要课程：消防法规与监督管理、消防燃烧学、防火防爆技术、灭火与抢险救援技术、消防工程施工与调试等。</li>
-                    <li>岗位方向：消防施工员、消防工程师、项目经理、消防设施检测与维护、消防工程预算员等。</li>
+                    <li><em>主要课程:</em> 消防法规与监督管理、消防燃烧学、防火防爆技术、灭火与抢险救援技术、消防工程施工与调试等。</li>
+                    <li><em>岗位方向:</em> 消防施工员、消防工程师、项目经理、消防设施检测与维护、消防工程预算员等。</li>
                 </ul>
                 <ul>
                     <li class="li">形象设计</li>
-                    <li>主要课程：职业形象塑造、人物整体造型设计、发型技术、美容技术、化妆技术、中医美容、头部护理等。</li>
-                    <li>岗位方向：人物形象设计师、化妆造型师、美容师、发型师、美甲师。</li>
+                    <li><em>主要课程:</em> 职业形象塑造、人物整体造型设计、发型技术、美容技术、化妆技术、中医美容、头部护理等。</li>
+                    <li><em>岗位方向:</em> 人物形象设计师、化妆造型师、美容师、发型师、美甲师。</li>
                 </ul>
                 <ul>
                     <li class="li">新能源汽车检测与维修</li>
-                    <li>主要课程：电控技术、电池技术、电机技术、汽车新能源与节能技术、汽车底盘构造与检修、汽车电气设备构造与维修等。</li>
-                    <li>岗位方向：新能源机修师、机械工程师、汽车工程师、销售服务等。</li>
+                    <li><em>主要课程:</em> 电控技术、电池技术、电机技术、汽车新能源与节能技术、汽车底盘构造与检修、汽车电气设备构造与维修等。</li>
+                    <li><em>岗位方向:</em> 新能源机修师、机械工程师、汽车工程师、销售服务等。</li>
                 </ul>
                 <ul>
                     <li class="li">航空高铁专业</li>
-                    <li>主要课程：民航乘务技能与管理/高速铁路客运服务管理、客舱安全与应急处置/高铁安全管理与应急处置、礼仪等。</li>
-                    <li>岗位方向：乘务、乘服、票务、安检等。</li>
+                    <li><em>主要课程:</em> 民航乘务技能与管理/高速铁路客运服务管理、客舱安全与应急处置/高铁安全管理与应急处置、礼仪等。</li>
+                    <li><em>岗位方向:</em> 乘务、乘服、票务、安检等。</li>
                 </ul>
                 <ul>
                     <li class="li">护理专业（养老/职教高考方向）</li>
-                    <li>主要课程：人体解剖学、生理学、病理学、药理学、医学心理学、急救护理学、预防医学、护理管理学等。</li>
-                    <li>岗位方向：医院护士、养老护理、家庭护理人员、社区护理人员等。</li>
+                    <li><em>主要课程:</em> 人体解剖学、生理学、病理学、药理学、医学心理学、急救护理学、预防医学、护理管理学等。</li>
+                    <li><em>岗位方向:</em> 医院护士、养老护理、家庭护理人员、社区护理人员等。</li>
                 </ul>
                 <ul>
                     <li class="li">电子商务</li>
-                    <li>主要课程：电子商务基础、网络营销、电子商务法律法规、电子商务网站设计、电子商务物流与配送等。</li>
-                    <li>岗位方向：网站策划、网站设计、电商客服、电子商务经理等。</li>
+                    <li><em>主要课程:</em> 电子商务基础、网络营销、电子商务法律法规、电子商务网站设计、电子商务物流与配送等。</li>
+                    <li><em>岗位方向:</em> 网站策划、网站设计、电商客服、电子商务经理等。</li>
                 </ul>
                 <ul>
                     <li class="li">幼儿教育</li>
-                    <li>主要课程：幼儿教育概论、幼儿心理学、幼儿教育法规与政策、幼儿保健学、幼儿安全教育等。</li>
-                    <li>岗位方向：从事幼儿教师岗位等。</li>
+                    <li><em>主要课程:</em> 幼儿教育概论、幼儿心理学、幼儿教育法规与政策、幼儿保健学、幼儿安全教育等。</li>
+                    <li><em>岗位方向:</em> 从事幼儿教师岗位等。</li>
                 </ul>
             <div class="clearfix"></div>
             </div>
         </li>
     </ul><br />
 
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>学校</th>
+                <th>性质</th>
+                <th>学费</th>
+                <th>地址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>昆明技师学院</td>
+                <td>公办</td>
+                <td>
+                    <span>3120元</span>
+                </td>
+                <td>云南省昆明市五华区学府路羊仙坡24号</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>云南建投技工学校</td>
+                <td>公办</td>
+                <td>
+                    <span>农村:4430</span><br />
+                    <span>城镇:6430</span>
+                </td>
+                <td>云南省昆明市嵩明县天创路18号</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>云南冶金技工学校</td>
+                <td>公办</td>
+                <td>
+                    <span>农村:5480</span><br />
+                    <span>城镇:7480</span>
+                </td>
+                <td>昆明市呈贡区高登街昆明高新第四小学北侧约50米</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>云南电子信息高级技工学校</td>
+                <td>公办</td>
+                <td>
+                    <span>农村:5960</span><br />
+                    <span>城镇:7960</span>
+                </td>
+                <td>昆明市晋宁区大修厂段与七七四段交叉东北</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>昆明通航技工学校</td>
+                <td>民办</td>
+                <td>
+                    <span>农村:4960</span><br />
+                    <span>城镇:7960</span>
+                </td>
+                <td>昆明市五华区普吉街道同心路54号</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>昆明滇越技工学校</td>
+                <td>民办</td>
+                <td>
+                    <span>4960</span>
+                </td>
+                <td>昆明市五华区昭宗路87号</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>云南新西南技工学校</td>
+                <td>民办</td>
+                <td>
+                    <span>农村:5960</span><br />
+                    <span>城镇:7960</span>
+                </td>
+                <td>昆明市官渡区大板桥街道板桥社区</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>昆明华航技工学校</td>
+                <td>民办</td>
+                <td>
+                    <span>11800</span>
+                </td>
+                <td>昆明市呈贡区石龙路奥斯迪电商园</td>
+            </tr>
+        </tbody>
 
+    </table>
     <h4>2025年中等职业学校录取安排</h4>
     <span>8月10-23日</span>
     <p>三年制中职批(中专、职高、技工学校)</p>
@@ -623,7 +734,8 @@
     <p>2、云南省<a href="javascript:void(0)" id="region">91个连片特困县(市)农村户口</a>的学生,其它县(市)20%的学生,可享受国家助学金:2300元/年/生（<span>滇越技工2000一年</span>）,三年共6900元;</p>
     <p>3、就读我校的迪庆州、怒江州农村户籍学生(初中起点第一、二学年,高中起点第一学年),给予生活补助:2500元/年/生；</p>
     <p>4、<span>建档立卡户享受“雨露计划”</span>补助:3000元/年/生。</p>
-    <p>备注:<span>2、3、4三条三选一,仅只能选择一项享受。</span></p>
+    <p>备注:<span>2、3、4条款仅三选一,仅只能选择一项享受。</span></p>
     <p>5、品学兼优的学生,可获得国家奖学金:6000元/生;云南省政府励志奖学金:4000元/生；学校优秀学生奖学金；有机会参加国际交流；</p>
+    <div class="botton"></div>
 </body>
 </html>
